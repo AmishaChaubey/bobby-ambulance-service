@@ -88,7 +88,7 @@ const ServiceSection = () => {
 
                 {/* Text */}
                 <h3
-                  className={`text-xl font-bold mb-3 transition-colors duration-500 ${
+                  className={`text-medium font-bold mb-3 transition-colors duration-500 ${
                     isActive ? "text-[#96080B]" : "text-gray-900"
                   }`}
                 >
