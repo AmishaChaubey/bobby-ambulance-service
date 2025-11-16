@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X, Phone, Heart, Mail, MapPin } from 'lucide-react';
 
 export default function FuneralNavbar() {
@@ -51,7 +52,7 @@ export default function FuneralNavbar() {
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo - Fixed sizing */}
-          <a href="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-32 h-12 sm:w-48 sm:h-16 overflow-hidden">
               <img
                 src="/logo-am1.png"
@@ -59,45 +60,45 @@ export default function FuneralNavbar() {
                 className="w-full h-full object-contain"
               />
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
-            <a
-              href="/"
+            <Link
+              to="/"
               onClick={() => setActiveLink('home')}
               className={`text-sm font-medium transition-all duration-200 ${activeLink === 'home' ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
             >
               Home
-            </a>
-            <a
-              href="/about"
+            </Link>
+            <Link
+              to="/about"
               onClick={() => setActiveLink('about')}
               className={`text-sm font-medium transition-all duration-200 ${activeLink === 'about' ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
             >
               About Us
-            </a>
-            <a
-              href="/services"
+            </Link>
+            <Link
+              to="/services"
               onClick={() => setActiveLink('services')}
               className={`text-sm font-medium transition-all duration-200 ${activeLink === 'services' ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
             >
               Services
-            </a>
-            <a
-              href="/blog"
+            </Link>
+            <Link
+              to="/blog"
               onClick={() => setActiveLink('blog')}
               className={`text-sm font-medium transition-all duration-200 ${activeLink === 'blog' ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
             >
               Blog
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               onClick={() => setActiveLink('contact')}
               className={`text-sm font-medium transition-all duration-200 ${activeLink === 'contact' ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
             >
               Contact
-            </a>
+            </Link>
 
             <button
               onClick={() => setIsModalOpen(true)}
@@ -124,11 +125,11 @@ export default function FuneralNavbar() {
         className={`md:hidden bg-white transition-all duration-300 ease-in-out overflow-hidden border-b border-gray-300 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <div className="px-4 py-4 space-y-2">
-          <a href="/" onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-gray-900 font-medium py-2 transition-colors">Home</a>
-          <a href="/about" onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-gray-900 font-medium py-2 transition-colors">About Us</a>
-          <a href="/services" onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-gray-900 font-medium py-2 transition-colors">Services</a>
-          <a href="/blog" onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-gray-900 font-medium py-2 transition-colors">Blog</a>
-          <a href="/contact" onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-gray-900 font-medium py-2 transition-colors">Contact</a>
+          <Link to="/" onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-gray-900 font-medium py-2 transition-colors">Home</Link>
+          <Link to="/about" onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-gray-900 font-medium py-2 transition-colors">About Us</Link>
+          <Link to="/services" onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-gray-900 font-medium py-2 transition-colors">Services</Link>
+          <Link to="/blog" onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-gray-900 font-medium py-2 transition-colors">Blog</Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)} className="block text-gray-600 hover:text-gray-900 font-medium py-2 transition-colors">Contact</Link>
 
           <button
             onClick={() => {
