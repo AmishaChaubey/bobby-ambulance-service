@@ -24,23 +24,23 @@ export default function ContactPage() {
     {
       icon: PhoneCall,
       title: '24/7 Support Line',
-      detail: '+91 9311974035',
-      subdDetail: 'Available Round the Clock',
-      color: 'from-gray-700 to-gray-900'
+      detail: '+91 9540455867',
+      subdDetail: '',
+      color: 'from-red-700 to-red-800'
     },
     {
       icon: Mail,
       title: 'Email Support',
-      detail: 'noidafreezerbox137@gmail.com',
-      subdDetail: 'Quick Response Guaranteed',
-      color: 'from-gray-700 to-gray-900'
+      detail: 'bobbyambulance@gmail.com',
+      subdDetail: '',
+      color: 'from-red-700 to-red-800'
     },
     {
       icon: MapPin,
       title: 'Our Location',
-      detail: 'Galaxy Diamond Plaza',
-      subdDetail: 'Sec-4, Greater Noida, UP 201009',
-      color: 'from-gray-700 to-gray-900'
+      detail: '505, Gaur City Center, Sector 4, Greater Noida, 201009',
+      subdDetail: '',
+      color: 'from-red-700 to-red-800'
     }
   ];
 
@@ -64,7 +64,7 @@ export default function ContactPage() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost/vinay ambulance/backend/send-mail.php", {
+      const res = await fetch("http://localhost/bobby ambulance/backend/send-mail.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -87,18 +87,45 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="relative overflow-hidden text-white mt-15 h-96 md:h-[500px]">
-        <div className="absolute inset-0 bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/banner8.png')" }}>
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/70 to-transparent"></div>
+    <section className="relative h-screen overflow-hidden">
+        {/* Parallax Background */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ 
+            backgroundImage: "url('/banner8.png')",
+            transform: `translateY(${scrollY * 0.5}px)`,
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/70 to-gray-900/90"></div>
         </div>
-
-        <div className={`relative max-w-7xl mx-auto px-6 h-full flex items-center transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
-          <div className="w-full text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4 font-serif drop-shadow-lg">Contact Us</h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto mb-10 drop-shadow">We’re Here to Help—Contact Us Anytime</p>
+        
+ 
+        {/* Hero Content */}
+        <div className="relative h-full flex items-center text-left px-6">
+          <div className="max-w-5xl mt-10">
+         
+            <h1 className="text-4xl md:text-5xl font-black mb-6 leading-tight text-white">
+              Contact Us for 
+              <br />
+              <span className="bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent">
+             Immediate Support
+              </span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto">
+              Professional ambulance services and freezer box rentals with rapid response and compassionate care
+            </p>
+       
           </div>
         </div>
-      </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+            <div className="w-1 h-3 bg-white/50 rounded-full"></div>
+          </div>
+        </div>
+      </section>
 
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -165,7 +192,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <button type="submit" className="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white py-4 px-6 rounded-xl font-semibold hover:from-black hover:to-gray-900 transition-all flex items-center justify-center gap-2">
+              <button type="submit" className="w-full bg-gradient-to-r from-red-700 to-red-800 text-white py-4 px-6 rounded-xl font-semibold hover:from-black hover:to-gray-900 transition-all flex items-center justify-center gap-2">
                 <Send className="w-5 h-5" />
                 Send Message
               </button>
@@ -173,18 +200,18 @@ export default function ContactPage() {
           </div>
 
           <div className={`bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl overflow-hidden border border-gray-100 transition-all ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="p-6 bg-gradient-to-r from-gray-800 to-gray-900">
+            <div className="p-6 bg-gradient-to-r from-red-700 to-red-800">
               <h3 className="text-2xl font-bold text-white mb-2">Visit Our Office</h3>
               <p className="text-gray-300 text-sm">Galaxy Diamond Plaza, Sector-4, Greater Noida</p>
             </div>
-            <iframe title="Vinay Funeral & cremation service" src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Shop%20no.1%20near%20Neo%20Hospital%20Block-D%20Sector-50%20Noida%20Up-201303+(PR%20Deadbody%20And%20FreezerBox%20)&t=p&z=15&ie=UTF8&iwloc=B&output=embed" className="w-full h-[400px] grayscale hover:grayscale-0 transition-all"></iframe>
+            <iframe title="Vinay Funeral & cremation service" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28021.382002794104!2d77.42547347946997!3d28.609592654146276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s505%2C%20Gaur%20City%20Center%2C%20Sector%204%2C%20Greater%20Noida%2C%20201009!5e0!3m2!1sen!2sin!4v1764335278324!5m2!1sen!2sin" className="w-full h-full grayscale hover:grayscale-0 transition-all"></iframe>
           </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4  font-serif">Frequently Asked <span className='text-gray-800'>Questions</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#3f9ad1]  mb-4  font-serif">Frequently Asked <span className='text-red-700'>Questions</span></h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">Everything you need to know about our freezer box rental services</p>
         </div>
 

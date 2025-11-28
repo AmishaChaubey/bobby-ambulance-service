@@ -20,35 +20,44 @@ export default function BlogList() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* ✅ Header */}
-<div className="relative overflow-hidden text-white mt-15 h-96 md:h-[500px]">
-  {/* Background Image with Parallax Effect */}
-  <div 
-    className="absolute inset-0 bg-cover bg-center bg-fixed"
-    style={{ backgroundImage: "url(/banner11.png)" }}
-  >
-    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/70 to-transparent"></div>
-  </div>
+  <section className="relative h-screen overflow-hidden">
+        {/* Parallax Background */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ 
+            backgroundImage: "url('/banner11.png')",
+            transform: `translateY(${scrollY * 0.5}px)`,
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/70 to-gray-900/90"></div>
+        </div>
+        
+ 
+        {/* Hero Content */}
+        <div className="relative h-full flex items-center text-left px-6">
+          <div className="max-w-5xl mt-10">
+         
+            <h1 className="text-4xl md:text-5xl font-black mb-6 leading-tight text-white">
+            Helpful Resources for 
+              <br />
+              <span className="bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent">
+             Families and Caregivers
+              </span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto">
+Learn more about emergency preparedness, ambulance services, and respectful funeral planning            </p>
+       
+          </div>
+        </div>
 
-  <div
-    className={`relative max-w-7xl mx-auto px-6 h-full flex items-center transform transition-all duration-1000 ${
-      isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-    }`}
-  >
-    <div className="w-full text-center">
-
-
-      <h1 className="text-5xl md:text-6xl font-bold mb-4 font-serif leading-tight drop-shadow-lg">
-        Our Blog
-      </h1>
-      <p className="text-xl text-white/90 max-w-3xl mx-auto mb-10 drop-shadow">
-        Explore medical stories, health tips, and ambulance service updates.
-      </p>
-      
-    
-    </div>
-  </div>
-
-</div>
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+            <div className="w-1 h-3 bg-white/50 rounded-full"></div>
+          </div>
+        </div>
+      </section>
 
       {/* 📰 Blog Grid */}
       <main className="container mx-auto px-4 py-12">

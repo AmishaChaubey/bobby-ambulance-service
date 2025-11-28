@@ -1,71 +1,76 @@
 export const blogData = [
   {
     id: 1,
-    title: "Understanding Emergency Response for Freezer Box & Funeral Services",
-    excerpt: "How professional teams ensure quick and dignified service during critical moments...",
+    title: "24/7 Dead Body Ambulance: Why Timely Transport Is Crucial",
+    excerpt: "Learn how fast ambulance response ensures dignity, safety, and comfort for grieving families...",
     content:
-      "Quick response time is essential when families require a dead body freezer box, cremation arrangements, or funeral services. In this updated guide, we explain how our team ensures timely service through efficient coordination, 24/7 availability, and strategically located support units. We also outline what families can do to speed up the process—such as keeping basic documents ready and providing accurate pickup details. Our goal is to make a difficult time easier by offering dignified, fast, and reliable service.",
-    author: "Service Director Sarah Johnson",
+      "When a loved one passes away, families need immediate support and proper guidance. Our 24/7 dead body ambulance service ensures quick pickup from home, hospital, or accident locations. With trained staff, sanitized vehicles, and GPS-enabled ambulances, we guarantee timely transport to the cremation ground or residence. This article explains why speed, hygiene, and professional handling make a huge difference during such sensitive moments.",
+    author: "Emergency Operations Head - Sarah Johnson",
     date: "March 15, 2025",
     readTime: "5 min read",
-    category: "Funeral Services",
+    category: "Ambulance Services",
     image: "/blog-img/1.jpg"
   },
+
   {
     id: 2,
-    title: "How Professionals Handle and Preserve the Deceased With Care",
-    excerpt: "Learn how experts maintain dignity and hygiene during body handling and freezer box placement...",
+    title: "How Our Team Ensures Safe & Respectful Body Handling",
+    excerpt: "Professional body handling methods that protect dignity and maintain hygiene...",
     content:
-      "Proper handling and preservation of the deceased are crucial for maintaining dignity and ensuring safety. This article explains how trained funeral staff handle the body respectfully from the place of death to the freezer box, ambulance, or cremation ground. We also discuss temperature-controlled preservation, hygiene measures, and the safe use of freezer boxes. Whether it's a home pickup or hospital coordination, our technicians follow standardized protocols to ensure professional, gentle, and respectful care.",
-    author: "Mortuary Care Specialist Mike Chen",
+      "Handling the deceased requires expertise, compassion, and proper technique. Our staff follows strict protocols—body cleaning, wrapping, sanitization, and gentle lifting procedures. Whether we shift the body to a freezer box, mortuary, or ambulance, everything is done with respect and safety in mind. This article covers hygiene standards, emotional support steps, and how we maintain the family's comfort throughout the process.",
+    author: "Senior Mortuary Specialist - Mike Chen",
     date: "March 12, 2025",
     readTime: "8 min read",
     category: "Mortuary Handling",
     image: "/blog-img/2.png"
   },
+
   {
     id: 3,
-    title: "Modern Dead Body Freezer Box Technology Explained",
-    excerpt: "A look at today’s advanced preservation systems used in funeral services...",
+    title: "Inside Modern Freezer Boxes: Cooling Technology You Can Trust",
+    excerpt: "Understanding how advanced freezer boxes preserve the body for long hours...",
     content:
-      "Freezer box technology has transformed funeral preservation standards. In this article, we explore the modern features used in high-quality dead body freezer boxes, including digital temperature controls, energy-efficient compressors, antimicrobial interiors, and stable cooling systems. We also discuss how these advancements help families by ensuring hygienic and long-lasting preservation, especially when relatives need time to gather for last rites.",
-    author: "Technical Director Lisa Wang",
+      "Modern dead body freezer boxes use advanced cooling technology to maintain the ideal preservation temperature. From digital thermostats to stainless steel interiors, these machines are designed for hygiene and long-lasting cooling. This article explains how freezer boxes work, when families need them, and how proper preservation helps relatives gather without any stress or delays during last rites.",
+    author: "Technical Expert - Lisa Wang",
     date: "March 8, 2025",
     readTime: "6 min read",
     category: "Technology",
     image: "/blog-img/3.jpg"
   },
+
   {
     id: 4,
-    title: "Emotional Support for Families During Funeral Arrangements",
-    excerpt: "How professional funeral teams help families cope during challenging moments...",
+    title: "Guiding Families Through Funeral Arrangements With Compassion",
+    excerpt: "A look at how we support families emotionally and practically during funeral planning...",
     content:
-      "Losing a loved one is overwhelming, and families often struggle to make quick decisions about cremation, rituals, transport, and freezer box arrangements. This article focuses on how our team provides emotional support, clear guidance, and compassionate assistance. From helping families understand cremation options to coordinating Pandit Ji services and documentation, our goal is to reduce stress and provide peaceful, dignified support during a difficult time.",
-    author: "Counseling Expert Dr. Emily Rodriguez",
+      "Arranging a funeral while dealing with grief is overwhelming. Our team assists families with every step—from selecting rituals, arranging Pandit Ji, and helping with important documents to coordinating cremation or burial procedures. We aim to provide clarity, calmness, and emotional support so that families can focus on their loved one while we manage the arrangements with dignity and care.",
+    author: "Family Support Counselor - Dr. Emily Rodriguez",
     date: "March 5, 2025",
     readTime: "7 min read",
     category: "Family Support",
     image: "/blog-img/4.png"
   },
+
   {
     id: 5,
-    title: "How Communities Can Prepare for Funeral & Emergency Situations",
-    excerpt: "Ensuring dignified care during emergencies and mass-casualty events...",
+    title: "How Apartments & Communities Can Prepare for Emergency Demise Cases",
+    excerpt: "Simple steps societies can take to handle sudden death situations efficiently...",
     content:
-      "Community preparedness plays an important role during emergencies. This article discusses how neighborhoods, apartments, and institutions can prepare for sudden deaths by maintaining updated emergency contacts, understanding freezer box arrangements, and knowing how to coordinate transport or cremation services quickly. We also explain how having access to experienced funeral professionals helps ensure dignified handling and quick support during unexpected situations.",
-    author: "Community Coordinator James Brown",
+      "Sudden deaths in residences or apartments often create panic because families don’t know whom to call first. This article explains how societies can prepare by keeping verified emergency contacts, ambulance numbers, and freezer box providers ready. We also discuss how security guards and RWAs can coordinate professionally, ensuring quick support and dignified handling of the situation.",
+    author: "Community Advisor - James Brown",
     date: "March 1, 2025",
     readTime: "4 min read",
     category: "Community Awareness",
     image: "/blog-img/5.png"
   },
+
   {
     id: 6,
-    title: "Special Care Guidelines for Handling Children in Funeral Services",
-    excerpt: "Understanding the sensitivity and compassion required in pediatric last rites...",
+    title: "Special Funeral Care for Children: Sensitivity Above Everything",
+    excerpt: "Why pediatric cases require extra compassion, smaller freezer units, and guided support...",
     content:
-      "Handling the loss of a child requires extraordinary sensitivity. This article explains the special considerations involved in pediatric funeral care, including the use of appropriate freezer box sizes, delicate handling protocols, and emotional support for grieving families. We also cover how our Pandit Ji services adapt rituals for children and how families are guided gently through each step. Compassion, care, and respect are at the heart of every pediatric case we manage.",
-    author: "Pediatric Care Specialist Dr. Amanda Lee",
+      "Managing funeral arrangements for a child is emotionally heartbreaking. Our pediatric care team provides extremely gentle handling, soft wrapping, and small freezer box units designed for infants and children. We assist families with customized rituals, counseling, and compassionate guidance throughout the process. This article explains why empathy, patience, and emotional presence are the foundation of every pediatric case.",
+    author: "Pediatric Funeral Expert - Dr. Amanda Lee",
     date: "February 28, 2025",
     readTime: "9 min read",
     category: "Pediatric Funeral Care",

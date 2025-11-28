@@ -67,16 +67,16 @@ export default function FuneralNavbar() {
   return (
     <nav className="bg-white fixed w-full top-0 z-50 shadow-md border-b border-gray-200">
       {/* Top Info Bar */}
-      <div className="bg-gray-800 text-white text-xs border-b border-gray-300 hidden sm:block">
+      <div className="bg-red-700 text-white text-xs border-b border-gray-300 hidden sm:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <div className="flex items-center gap-1">
               <Phone className="w-3 h-3" />
-              <span className="text-xs sm:text-sm">+91 9311974035</span>
+              <span className="text-xs sm:text-sm">+91 9540455867</span>
             </div>
             <div className="flex items-center gap-1">
               <Mail className="w-3 h-3" />
-              <span className="text-xs sm:text-sm">noidafreezerbox137@gmail.com</span>
+              <span className="text-xs sm:text-sm">bobbyambulance@gmail.com</span>
             </div>
           </div>
           <div className="flex items-center gap-1">
@@ -91,8 +91,9 @@ export default function FuneralNavbar() {
         <div className="flex justify-between items-center h-16 sm:h-20">
 
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-32 h-12 sm:w-48 sm:h-16 overflow-hidden">
-              <img src="/logo-am1.png" alt="Logo" className="w-full h-full object-contain" />
+            {/* Fixed logo container with proper Tailwind classes */}
+            <div className="w-32 h-16 sm:w-48 sm:h-20 overflow-hidden">
+              <img src="/bobby-logo.png" alt="Logo" className="w-full h-full object-contain" />
             </div>
           </Link>
 
@@ -125,7 +126,7 @@ export default function FuneralNavbar() {
 
             <button
               onClick={() => setIsModalOpen(true)}
-              className="bg-gradient-to-r from-gray-700 to-gray-900 text-white px-3 sm:px-5 py-2 rounded-lg flex items-center gap-2 shadow-md text-xs sm:text-sm"
+              className="bg-red-700 text-white px-3 sm:px-5 py-2 rounded-lg flex items-center gap-2 shadow-md text-xs sm:text-sm"
             >
               <Phone className="w-4 h-4" /> <span className="hidden sm:inline">Book Now</span>
             </button>
@@ -153,7 +154,7 @@ export default function FuneralNavbar() {
 
           <button
             onClick={() => { setIsModalOpen(true); setIsOpen(false); }}
-            className="w-full bg-gradient-to-r from-gray-700 to-gray-900 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2 shadow-md mt-4"
+            className="w-full bg-red-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2 shadow-md mt-4"
           >
             <Phone className="w-5 h-5" /> Book Now
           </button>
@@ -165,7 +166,7 @@ export default function FuneralNavbar() {
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-2 sm:p-4 z-50">
           <div className="bg-white rounded-lg shadow-2xl w-full max-w-lg max-h-[95vh] flex flex-col">
 
-            <div className="bg-gray-700 text-white p-2 sm:p-4 rounded-t-lg flex justify-between items-center flex-shrink-0">
+            <div className="bg-red-700 text-white p-2 sm:p-4 rounded-t-lg flex justify-between items-center flex-shrink-0">
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <Heart className="w-4 h-4 sm:w-5 sm:h-5" />
                 <h3 className="text-base sm:text-lg font-semibold">Request Service</h3>
@@ -267,7 +268,7 @@ export default function FuneralNavbar() {
 
                 <button
                   onClick={handleSubmit}
-                  className="flex-1 py-2 rounded-md text-white bg-gray-700 hover:bg-gray-800"
+                  className="flex-1 py-2 rounded-md text-white bg-red-700 hover:bg-red-800"
                 >
                   Submit
                 </button>

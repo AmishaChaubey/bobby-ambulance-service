@@ -1,55 +1,71 @@
-// Funeral & Mortuary Services with Animated Hover Design + Images + Button
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Clock, Users, Truck, Shield, Heart, Phone, Star, CheckCircle } from "lucide-react";
 
 const ServiceSection = () => {
   const [activeCard, setActiveCard] = useState(null);
 
   const services = [
     {
-      img: "/blog-img/3.jpg",
+      img: "/img1.jpg",
+      title: "Emergency Ambulance Service",
+      description: "24/7 rapid response ambulance service with trained medical staff and life-saving equipment.",
+      icon: <Clock className="w-6 h-6" />,
+      features: ["5-10 min response time", "Advanced life support", "Trained paramedics"],
+      link: "/services",
+      emergency: true
+    },
+    {
+      img: "/img6.jpg",
       title: "Freezer Box on Rent",
-      description:
-        "Premium quality freezer boxes available for rent, equipped with temperature control to preserve the deceased with dignity and respect.",
+      description: "Premium quality freezer boxes with temperature control to preserve with dignity and respect.",
+      icon: <Shield className="w-6 h-6" />,
+      features: ["Temperature controlled", "Hygienic", "Available 24/7"],
       link: "/services",
+      emergency: false
     },
     {
-      img: "/blog-img/7.jpg",
-      title: "Funeral Box Services",
-      description:"Elegant and respectful funeral boxes designed to provide a dignified final resting place for your loved ones with utmost care and compassion",
-      link: "/services",
-    },
-    {
-      img: "/blog-img/8.jpg",
-      title: "Cremation Ceremony Assistance",
-      description:
-        "Complete support for cremation ceremonies, including arrangements, documentation, and handling throughout.",
-      link: "/services",
-    },
-    {
-      img: "/blog-img/9.jpg",
+      img: "/img2.jpg",
       title: "Dead Body Transportation",
-      description:
-        "Dignified and respectful transportation services for the deceased, ensuring safe and proper handling during transfers.",
+      description: "Dignified and respectful transportation services ensuring safe and proper handling during transfers.",
+      icon: <Truck className="w-6 h-6" />,
+      features: ["Dignified transport", "Proper handling", "Nationwide coverage"],
       link: "/services",
+      emergency: false
     },
+    {
+      img: "/img3.jpg",
+      title: "Funeral Assistance",
+      description: "Complete support for funeral arrangements, documentation, and handling throughout the process.",
+      icon: <Heart className="w-6 h-6" />,
+      features: ["Documentation help", "Respectful handling", "Complete guidance"],
+      link: "/services",
+      emergency: false
+    }
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative bg-gradient-to-br from-white via-gray-50 to-blue-50 py-20 overflow-hidden">
+
+
+    
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gray-900 mb-4 font-serif">
-            Our <span className="text-gray-800">Services</span>
+        
+          <h2 className="text-5xl font-bold text-[#3f9ad1] mb-4 font-serif">
+            Our <span className="text-red-600">Services</span>
           </h2>
-          <p className="text-xl text-gray-600">
-            Providing dignified and respectful services during difficult times
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Providing dignified and respectful services during difficult times with 24/7 emergency support
           </p>
         </div>
 
+     
+
         {/* Service Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const isActive = activeCard === index;
 
@@ -58,58 +74,89 @@ const ServiceSection = () => {
                 key={index}
                 onMouseEnter={() => setActiveCard(index)}
                 onMouseLeave={() => setActiveCard(null)}
-                className={`relative group rounded-2xl p-6 border border-gray-200 bg-white shadow-md transition-all duration-500 transform hover:-translate-y-3 hover:shadow-xl overflow-hidden`}
+                className={`relative group rounded-2xl overflow-hidden transition-all duration-500 transform hover:-translate-y-3 ${
+                  isActive ? "shadow-2xl" : "shadow-lg"
+                }`}
               >
-                {/* Hover Overlay */}
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br from-gray-800 to-purple-800 opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
-                ></div>
+                {/* Emergency Badge */}
+                {service.emergency && (
+                  <div className="absolute top-0 left-0 z-20 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-br-lg rounded-tl-lg">
+                    EMERGENCY
+                  </div>
+                )}
 
-                {/* Glow Border */}
-                <div
-                  className={`absolute inset-0 rounded-2xl transition-all duration-500 ${
-                    isActive ? "border-2 border-indigo-200" : "border border-transparent"
-                  }`}
-                ></div>
-
-                {/* Image */}
-                <div className="w-full h-40 mb-5 rounded-xl overflow-hidden">
-                  <img
-                    src={service.img}
-                    alt={service.title}
-                    className={`w-full h-full object-cover transition-all duration-500 ${
+                {/* Card Background */}
+                <div className="bg-white h-full">
+                  {/* Image Container */}
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={service.img}
+                      alt={service.title}
+                      className={`w-full h-full object-cover transition-all duration-700 ${
+                        isActive ? "scale-110" : "scale-100"
+                      }`}
+                    />
+                    {/* Image Overlay */}
+                    <div className={`absolute inset-0 bg-gradient-to-t from-black/70 to-transparent transition-opacity duration-500 ${
+                      isActive ? "opacity-100" : "opacity-40"
+                    }`}></div>
+                    
+                    {/* Icon */}
+                    <div className={`absolute bottom-4 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center transition-all duration-500 ${
                       isActive ? "scale-110" : "scale-100"
-                    }`}
-                  />
+                    }`}>
+                      <div className="text-red-600">
+                        {service.icon}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6">
+                    {/* Title */}
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                      {service.title}
+                    </h3>
+                    
+                    {/* Description */}
+                    <p className="text-gray-600 mb-4 text-sm">
+                      {service.description}
+                    </p>
+
+                    {/* Features */}
+                    <div className="mb-5">
+                      {service.features.map((feature, i) => (
+                        <div key={i} className="flex items-center mb-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                          <span className="text-sm text-gray-700">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Button */}
+                    <Link 
+                      to={service.link}
+                      className={`w-full py-2 px-4 rounded-lg font-semibold transition-all duration-500 shadow-md text-center inline-block relative z-10 ${
+                        isActive
+                          ? "bg-red-600 text-white hover:bg-red-700"
+                          : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                      }`}
+                    >
+                      Learn More →
+                    </Link>
+                  </div>
                 </div>
 
-                {/* Text */}
-                <h3
-                  className={`text-medium font-bold mb-3 transition-colors duration-500 ${
-                    isActive ? "text-gray-800" : "text-gray-900"
-                  }`}
-                >
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  {service.description}
-                </p>
-
-                {/* Button */}
-                <Link 
-                  to={service.link}
-                  className={`w-full py-2 px-4 rounded-lg font-semibold transition-all duration-500 shadow-md text-center inline-block relative z-10 ${
-                    isActive
-                      ? "bg-gray-800 text-white hover:bg-gray-900"
-                      : "bg-gray-100 text-gray-800 hover:bg-gray-200"
-                  }`}
-                >
-                  Learn More →
-                </Link>
+                {/* Hover Effect Line */}
+                <div className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r from-red-600 to-red-800 transition-all duration-500 ${
+                  isActive ? "w-full" : "w-0"
+                }`}></div>
               </div>
             );
           })}
         </div>
+
+     
       </div>
     </section>
   );

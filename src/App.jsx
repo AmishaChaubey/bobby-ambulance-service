@@ -35,10 +35,11 @@ const App = () => {
             element={
               <div className="w-full min-h-screen flex flex-col">
                 <HeroSecttion />
-                <StatsBar />
+                {/* <StatsBar /> */}
                 <WelcomeSection />
-                <CallToAction />
+               
                 <WhyChooseUs />
+                 <CallToAction />
                 <ServiceSection />
                 <Testimonials />
               </div>
