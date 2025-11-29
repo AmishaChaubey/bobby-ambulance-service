@@ -9,7 +9,7 @@ export const blogData = [
     date: "March 15, 2025",
     readTime: "5 min read",
     category: "Ambulance Services",
-    image: "/blog-img/1.jpg"
+    image: "/cta.jpeg"
   },
 
   {
@@ -48,7 +48,7 @@ export const blogData = [
     date: "March 5, 2025",
     readTime: "7 min read",
     category: "Family Support",
-    image: "/blog-img/4.png"
+    image: "/blog1.jpg"
   },
 
   {
@@ -74,6 +74,6 @@ export const blogData = [
     date: "February 28, 2025",
     readTime: "9 min read",
     category: "Pediatric Funeral Care",
-    image: "/blog-img/6.jpg"
+    image: "/blog2.jpg"
   }
 ];

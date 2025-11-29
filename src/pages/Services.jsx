@@ -155,7 +155,7 @@ export default function ServicesPage() {
               <Sparkles className="w-4 h-4 mr-2 text-red-600" />
               <span className="text-sm font-bold text-gray-700">OUR SERVICES</span>
             </div>
-            <h2 className="text-4xl md:text-6xl font-black text-[#3f9ad1]">
+            <h2 className="text-4xl md:text-6xl font-black text-[#3f9ad1] font-serif">
               Comprehensive <span className="text-red-700">Care Solutions</span>
             </h2>
           </div>
@@ -201,7 +201,7 @@ export default function ServicesPage() {
       <section className="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-black text-[#3f9ad1]">
+            <h2 className="text-4xl md:text-6xl font-black text-[#3f9ad1] font-serif">
               Quick Response <span className="text-red-700">Process</span>
             </h2>
           </div>

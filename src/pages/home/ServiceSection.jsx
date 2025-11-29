@@ -34,7 +34,7 @@ const ServiceSection = () => {
       emergency: false
     },
     {
-      img: "/img3.jpg",
+      img: "/blog-img/8.jpg",
       title: "Funeral Assistance",
       description: "Complete support for funeral arrangements, documentation, and handling throughout the process.",
       icon: <Heart className="w-6 h-6" />,
