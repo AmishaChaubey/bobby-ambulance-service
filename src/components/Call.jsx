@@ -3,7 +3,7 @@ import { FiPhone } from 'react-icons/fi'; // Feather phone icon
 
 const CallIcon = () => {
   const handleCallClick = () => {
-    const phoneNumber = '919540455867';
+    const phoneNumber = '917678309495';
     window.location.href = `tel:${phoneNumber}`;
   };
 
