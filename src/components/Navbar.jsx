@@ -72,11 +72,11 @@ export default function FuneralNavbar() {
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <div className="flex items-center gap-1">
               <Phone className="w-3 h-3" />
-              <span className="text-xs sm:text-sm">+91 9540455867</span>
+              <span className="text-xs sm:text-sm">+91 7678309495</span>
             </div>
             <div className="flex items-center gap-1">
               <Mail className="w-3 h-3" />
-              <span className="text-xs sm:text-sm">bobbyambulance@gmail.com</span>
+              <span className="text-xs sm:text-sm">idealpackersandmoversindia@gmail.com</span>
             </div>
           </div>
           <div className="flex items-center gap-1">

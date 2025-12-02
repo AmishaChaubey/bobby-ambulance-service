@@ -33,14 +33,14 @@ export default function ContactPage() {
     {
       icon: PhoneCall,
       title: '24/7 Emergency Helpline',
-      detail: '+91 9540455867',
+      detail: '+91 7678309495',
       color: 'from-red-700 to-red-800',
       description: 'Available round the clock for emergencies'
     },
     {
       icon: Mail,
       title: 'Email Support',
-      detail: 'bobbyambulance@gmail.com',
+      detail: 'idealpackersandmoversindia@gmail.com',
       color: 'from-red-700 to-red-800',
       description: 'We respond within 2 hours'
     },
@@ -151,7 +151,7 @@ export default function ContactPage() {
         {/* Content */}
         <div className="relative min-h-[70vh] lg:min-h-screen flex items-center px-4 sm:px-6 md:px-8 lg:px-12 py-20">
           <div className="w-full max-w-4xl">
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-black text-white leading-tight mb-3">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-3">
               Contact Us for <br />
               <span className="bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent">
                 Emergency Services
@@ -417,7 +417,7 @@ export default function ContactPage() {
               className="bg-white text-red-700 font-bold py-3 px-6 lg:px-8 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors w-full sm:w-auto"
             >
               <PhoneCall className="w-5 h-5 mr-2 flex-shrink-0" />
-              Call +91 9540455867
+              Call +91 7678309495
             </a>
             <a 
               href="mailto:bobbyambulance@gmail.com" 

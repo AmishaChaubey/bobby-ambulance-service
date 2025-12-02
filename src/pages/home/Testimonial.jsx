@@ -186,7 +186,7 @@ export default function Testimonials() {
           </p>
           <div className="inline-flex items-center gap-4 flex-wrap justify-center">
             <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-sm sm:text-base">
-              Emergency: +91 9540455867
+              Emergency: +91 7678309495
             </button>
 
             <Link to="/contact">

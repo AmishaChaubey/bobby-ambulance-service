@@ -145,7 +145,7 @@ export default function WelcomeSection() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-red-600 font-semibold">Emergency Hotline</p>
-                  <p className="text-xl font-bold text-gray-900">+91 9540455867</p>
+                  <p className="text-xl font-bold text-gray-900">+91 7678309495</p>
                 </div>
                 <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
                   <Phone className="w-6 h-6 text-white" />

@@ -27,7 +27,7 @@ const Footer = () => {
             className="bg-white text-red-700 px-4 py-2 rounded-full font-bold flex items-center hover:bg-gray-100 transition-colors"
           >
             <FaPhoneAlt className="mr-2" />
-            Call Now: (+91) 9540455867
+            Call Now: (+91) 7678309495
           </a>
         </div>
       </div>
@@ -108,7 +108,7 @@ const Footer = () => {
 
             <div className="space-y-4">
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-2">
                 <FaMapMarkerAlt className="text-red-500 text-lg mt-1" />
                 <div className="text-gray-600">
                   <p>505, Gaur City Center,</p>
@@ -120,7 +120,7 @@ const Footer = () => {
                 <FaPhoneAlt className="text-red-500 text-lg mt-1" />
                 <div className="text-gray-600">
                   <a href="tel:+919540455867" className="hover:text-red-500">
-                    (+91) 9540455867
+                    (+91) 7678309495
                   </a>
                   <p className="flex items-center mt-1 hover:text-green-600"></p>
                 </div>
@@ -129,10 +129,11 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <FaEnvelope className="text-red-500 text-lg mt-1" />
                 <a
-                  href="mailto:bobbyambulance@gmail.com"
+                  href="mailto:idealpackersandmoversindia@gmail.com"
                   className="text-gray-600 hover:text-red-500"
                 >
-                  bobbyambulance@gmail.com
+                  idealpackersandmoversindia
+                  @gmail.com
                 </a>
               </div>
 
