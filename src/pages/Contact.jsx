@@ -164,7 +164,7 @@ export default function ContactPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a 
-                href="tel:+919540455867" 
+                href="tel:+917678309495" 
                 className="bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-6 sm:px-8 rounded-lg flex items-center justify-center transition-colors w-full sm:w-auto"
               >
                 <PhoneCall className="w-5 h-5 mr-2 flex-shrink-0" />
