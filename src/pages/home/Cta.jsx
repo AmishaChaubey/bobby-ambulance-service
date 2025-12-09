@@ -41,7 +41,7 @@ export default function CallToAction() {
               <p className="text-lg font-bold">+91 7678309495</p>
             </div>
             
-            <a href="tel:+919876543210" className="bg-[#3f9ad1] hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-colors flex items-center">
+            <a href="tel:+917678309495" className="bg-[#3f9ad1] hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-colors flex items-center">
               <Phone className="w-5 h-5 mr-2" />
               Call Now
             </a>

@@ -437,7 +437,7 @@ export default function AboutPageRedesign() {
             We're here to help 24/7. Contact us for immediate assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+919876543210" className="bg-white text-[#3f9ad1] font-bold py-3 px-6 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors">
+            <a href="tel:+917678309495" className="bg-white text-[#3f9ad1] font-bold py-3 px-6 rounded-lg flex items-center justify-center hover:bg-gray-100 transition-colors">
               <Phone className="w-5 h-5 mr-2" />
               Call Now
             </a>
